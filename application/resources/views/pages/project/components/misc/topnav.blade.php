@@ -29,14 +29,14 @@
             @endif
             <!--[milestones]-->
             @if(config('settings.project_permissions_view_milestones'))
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link  tabs-menu-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_milestones'] ?? '' }}"
                     data-toggle="tab" id="tabs-menu-milestones" data-loading-class="loading-tabs"
                     data-loading-target="embed-content-container"
                     data-dynamic-url="{{ _url('/projects') }}/{{ $project->project_id }}/milestones"
                     data-url="{{ url('/milestones') }}?source=ext&milestoneresource_type=project&milestoneresource_id={{ $project->project_id }}"
                     href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.milestones')) }}</a>
-            </li>
+            </li> -->
             @endif
 
             <!--[files]-->
@@ -63,7 +63,7 @@
             @endif
             <!--billing-->
             @if(auth()->user()->is_team || auth()->user()->is_client_owner)
-            <li data-modular-id="project_tabs_menu_financial"
+            <!-- <li data-modular-id="project_tabs_menu_financial"
                 class="nav-item dropdown {{ $page['tabmenu_more'] ?? '' }}  {{ menuVisibilityProjectBillingTab() }}">
                 <a class="nav-link dropdown-toggle  tabs-menu-item" data-loading-class="loading-tabs"
                     data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true"
@@ -71,7 +71,6 @@
                     <span class="hidden-xs-down">{{ cleanLang(__('lang.financial')) }}</span>
                 </a>
                 <div class="dropdown-menu" x-placement="bottom-start" id="fx-topnav-dropdown">
-                    <!--[invoices]-->
                     @if(config('settings.project_permissions_view_invoices'))
                     <a class="dropdown-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_invoices'] ?? '' }}"
                         data-toggle="tab" data-loading-class="loading-tabs"
@@ -80,7 +79,6 @@
                         data-url="{{ url('/invoices') }}?source=ext&invoiceresource_id={{ $project->project_id }}&invoiceresource_type=project"
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.invoices')) }}</a>
                     @endif
-                    <!--[estimate]-->
                     @if(auth()->user()->role->role_estimates >= 1)
                     <a class="dropdown-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_estimates'] ?? '' }}"
                         data-toggle="tab" data-loading-class="loading-tabs"
@@ -89,7 +87,6 @@
                         data-url="{{ url('/estimates') }}?source=ext&estimateresource_id={{ $project->project_id }}&estimateresource_type=project"
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.estimates')) }}</a>
                     @endif
-                    <!--[payments]-->
                     @if(config('settings.project_permissions_view_payments'))
                     <a class="dropdown-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_invoices'] ?? '' }}"
                         data-toggle="tab" data-loading-class="loading-tabs"
@@ -98,7 +95,6 @@
                         data-url="{{ url('/payments') }}?source=ext&paymentresource_id={{ $project->project_id }}&paymentresource_type=project"
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.payments')) }}</a>
                     @endif
-                    <!--[expenses]-->
                     @if(config('settings.project_permissions_view_expenses'))
                     <a class="dropdown-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_invoices'] ?? '' }}"
                         data-toggle="tab" data-loading-class="loading-tabs"
@@ -107,7 +103,6 @@
                         data-url="{{ url('/expenses') }}?source=ext&expenseresource_id={{ $project->project_id }}&expenseresource_type=project"
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.expenses')) }}</a>
                     @endif
-                    <!--[timesheets]-->
                     @if(config('settings.project_permissions_view_timesheets'))
                     <a class="dropdown-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_timesheets'] ?? '' }}"
                         data-toggle="tab" data-loading-class="loading-tabs"
@@ -117,14 +112,13 @@
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.timesheets')) }}</a>
                     @endif
                 </div>
-            </li>
+            </li> -->
             @endif
 
             <!--[MODULES] - dynamic menu-->
             {!! config('module_menus.project_tabs_menu') !!}
 
-            <!--[MODULES]-->
-            <li data-modular-id="project_tabs_menu_more" class="nav-item dropdown {{ $page['tabmenu_more'] ?? '' }}">
+            <!-- <li data-modular-id="project_tabs_menu_more" class="nav-item dropdown {{ $page['tabmenu_more'] ?? '' }}">
                 <a class="nav-link dropdown-toggle  tabs-menu-item" data-loading-class="loading-tabs"
                     data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true"
                     id="tabs-menu-billing" aria-expanded="false">
@@ -132,10 +126,9 @@
                 </a>
                 <div class="dropdown-menu" x-placement="bottom-start" id="fx-topnav-dropdown">
 
-                    <!--[MODULES-->
+           
 
 
-                    <!--tickets-->
                     @if(config('settings.project_permissions_view_tickets'))
                     <a class="dropdown-item tabs-menu-item   js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_tickets'] ?? '' }}"
                         id="tabs-menu-tickets" data-toggle="tab" data-loading-class="loading-tabs"
@@ -145,7 +138,6 @@
                         href="#projects_ajaxtab" role="tab">{{ cleanLang(__('lang.tickets')) }}</a>
                     @endif
 
-                    <!--notes-->
                     @if(config('settings.project_permissions_view_notes'))
                     <a class="dropdown-item js-dynamic-url js-ajax-ux-request {{ $page['tabmenu_notes'] ?? '' }}"
                         id="tabs-menu-notes" data-toggle="tab" data-loading-class="loading-tabs"
@@ -156,7 +148,7 @@
                     @endif
 
                 </div>
-            </li>
+            </li> -->
         </ul>
         <!-- Tab panes -->
 
