@@ -137,7 +137,7 @@
     </div>
     <!--billing details-->
     @if(config('visibility.project_billing_summary'))
-    <div class="card-body p-t-0 p-b-0">
+    <div class="card-body p-t-0 p-b-0" style="display:none">
         <div class="row">
             <div class="col-sm-6">
                 <div>
@@ -172,10 +172,10 @@
 
     @if(config('settings.project_permissions_view_invoices'))
     <!--INVOICES-->
-    <div class="m-t-10 m-b-10">
+    <!-- <div class="m-t-10 m-b-10">
         <hr>
-    </div>
-    <div class="card-body p-t-0 p-b-0">
+    </div> -->
+    <div class="card-body p-t-0 p-b-0" style="display:none">
         <div>
             <table class="table no-border m-b-0">
                 <tbody>
@@ -232,9 +232,9 @@
 
     @if(config('visibility.project_show_custom_fields'))
     <!--CUSTOMER FIELDS-->
-    <div class="m-t-10 m-b-10">
+    <!-- <div class="m-t-10 m-b-10">
         <hr>
-    </div>
+    </div> -->
     <div class="card-body p-t-0 p-b-0">
         @foreach($fields as $field)
         @if($field->customfields_show_project_page == 'yes')

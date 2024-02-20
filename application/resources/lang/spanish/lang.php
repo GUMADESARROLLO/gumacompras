@@ -188,7 +188,7 @@ return [
 'cancel_subscription' => "Cancelar suscripción",
 'cancel_upload' => "Cancelar carga",
 'cancel' => "Cancelar",
-'cancelled' => "Cancelado",
+
 'categories' => "Categorías",
 'Category Ordering' => "Orden de categoría",
 'category_already_exists' => "Ya existe una categoría con ese nombre",
@@ -262,7 +262,7 @@ return [
 'complete_your_payment' => "Complete su pago",
 'completed_projects' => "Proyectos completados",
 'completed_tasks' => "Tareas completadas",
-'completed' => "Terminado",
+
 'confirm_action' => "Confirmar acción",
 'confirm_password' => "Confirmar contraseña",
 'confirm' => "Confirmar",
@@ -344,7 +344,6 @@ return [
 'day' => "Día",
 'days_before' => "días antes",
 'days' => "Dias",
-'deadline' => "Plazo",
 'debit' => "Débito",
 'december_short' => "dic",
 'december' => "diciembre",
@@ -427,7 +426,7 @@ return [
 'drag_drop_not_supported' => "Su navegador no admite arrastrar y soltar",
 'drop_down_list' => "La lista desplegable",
 'due_date_must_be_after_start_date' => "La fecha de vencimiento debe ser posterior a la fecha de inicio",
-'due_date' => "Fecha de vencimiento",
+
 'due_invoices' => "Factura vencida",
 'due' => "Vencer",
 'duration' => "Duración",
@@ -461,7 +460,7 @@ return [
 'edit_payment' => "Editar pago",
 'edit_product' => "Editar producto",
 'edit_project_template' => "Editar plantilla de proyecto",
-'edit_project' => "Editar proyecto",
+
 'edit_proposal' => "Editar propuesta",
 'edit_settings' => "Editar configuración",
 'edit_tag' => "Editar etiqueta",
@@ -659,7 +658,7 @@ return [
 'import_wizard_upload_file' => "Cargar archivo de datos",
 'importing_wizard_info' => "Para importar datos, debe estar en formato de archivo Excel o CSV. Puede descargar los archivos de muestra y utilizarlos como plantilla para sus datos",
 'importing_wizard' => "Asistente de importación",
-'in_progress' => "En curso",
+
 'inbox' => "Bandeja de entrada",
 'income_vs_expense' => "Ingresos vs Gastos",
 'income' => "Ingreso",
@@ -892,7 +891,7 @@ return [
 'not_attached_to_project' => "No adjunto a un proyecto",
 'not_billable' => "No facturable",
 'not_invoiced' => "No facturado",
-'not_started' => "No empezado",
+
 'not_visible_to_the_client' => "no visible para el cliente",
 'not_visisble_to_client' => "No visible para el cliente",
 'note_not_found' => "No se pudo encontrar la nota",
@@ -915,7 +914,7 @@ return [
 'october' => "octubre",
 'ok' => "OK",
 'oldest_first' => "Los más viejos primero",
-'on_hold' => "En espera",
+
 'on' => "En",
 'one_of_the_selected_items_nolonger_exists' => "Uno de los elementos seleccionados ya no existe. Actualiza y vuelve a intentarlo",
 'only_available_to_specified_customers' => "Solo disponible para clientes especificados",
@@ -1005,9 +1004,8 @@ return [
 'project_proposal' => "Propuesta de proyecto",
 'project_settings' => "Configuración del proyecto",
 'project_template' => "Plantilla de proyecto",
-'project_title' => "Título del Proyecto",
-'project' => "Proyecto",
-'projects' => "Proyectos",
+
+
 'proposal_amount' => "Monto de la propuesta",
 'proposal_prefix' => "Prefijo de propuesta",
 'publish_contract' => "Publicar contrato",
@@ -1164,7 +1162,32 @@ return [
 'starred_tasks' => "Tareas destacadas",
 'starred_users' => "Usuarios destacados",
 'start_date_must_be_before_due_date' => "La fecha de inicio debe ser anterior a la fecha de vencimiento",
-'start_date' => "Fecha de inicio",
+
+// INIT MIS OPCIONES EDITADAS
+
+'edit_project' => "Editar Solicitud",
+'item_sku' => "SKU",
+'item_cls' => "CLIENTE INTERNO  ",
+'item_desc' => "DESCRIPCION",
+'item_UND' => "UND DE MEDIDA ",
+'item_CANT' => "CANTIDAD ",
+'start_date' => "FECHA SOLICITUD",
+'deadline' => "FECHA REQUERIDO",
+'auth_date' => "FECHA AUTORIZACION ",
+'project_title' => "DESCRIPCION",
+'due_date' => "FECHA REQUERIDO",
+'project' => "Solicitud",
+'projects' => "Solicitudes",
+'update_report' => "Actualizar",
+'not_started' => "No empezado",
+'on_hold' => "SOLICITUD FIRMA",
+'in_progress' => "APROBACION OC",
+'cancelled' => "OC RECIBIDA",
+'completed' => "OC ENVIADA",
+'status' => "ESTADO",
+
+// INIT MIS OPCIONES EDITADAS
+
 'start_time' => "Hora de inicio",
 'start_timer' => "Iniciar temporizador",
 'start' => "Comienzo",
@@ -1174,7 +1197,7 @@ return [
 'status_already_exists' => "El estado ya existe",
 'status_changed' => "Estado cambiado",
 'status_name' => "Nombre de estado",
-'status' => "Estado",
+
 'stop_all_timers' => "Detener todos los temporizadores",
 'stop_my_timer' => "Detener mi temporizador",
 'stop_recurring' => "Dejar de recurrir",
@@ -2084,7 +2107,7 @@ return [
 'monthly_revenue' => "ganancia mensual",
 'yearly_revenue' => "Ingresos anuales",
 'project_category_invoices' => "Facturas de categoría de proyecto",
-'update_report' => "Informe de actualización",
+
 'per_page' => "Por página",
 'date_range' => "Rango de fechas",
 'custom_range' => "Rango personalizado",
