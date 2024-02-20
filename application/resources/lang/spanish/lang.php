@@ -532,7 +532,7 @@ return [
 'event_created_estimate' => "Creó una nueva estimación",
 'event_created_invoice' => "Creó una nueva factura",
 'event_created_lead' => "Creó una nueva tarea",
-'event_created_project' => "Creó un nuevo proyecto",
+'event_created_project' => "Creó nueva solicitud",
 'event_created_task' => "Creó una nueva tarea",
 'event_declined_estimate' => "Rechazó una estimación",
 'event_opened_ticket' => "Abrió un nuevo ticket de soporte",
