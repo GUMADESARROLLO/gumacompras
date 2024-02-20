@@ -187,7 +187,7 @@
         <hr>
     </div>
     <!--billing details-->
-    @if(config('visibility.project_billing_summary'))
+    <!-- @if(config('visibility.project_billing_summary'))
     <div class="card-body p-t-0 p-b-0 " style="display:none">
         <div class="row">
             <div class="col-sm-6">
@@ -219,7 +219,7 @@
             </div>
         </div>
     </div>
-    @endif
+    @endif -->
 
     @if(config('settings.project_permissions_view_invoices'))
     <!--INVOICES-->

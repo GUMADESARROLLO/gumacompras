@@ -187,8 +187,8 @@
         <hr>
     </div>
     <!--billing details-->
-    <?php if(config('visibility.project_billing_summary')): ?>
-    <div class="card-body p-t-0 p-b-0">
+    <!-- <?php if(config('visibility.project_billing_summary')): ?>
+    <div class="card-body p-t-0 p-b-0 " style="display:none">
         <div class="row">
             <div class="col-sm-6">
                 <div>
@@ -220,14 +220,14 @@
             </div>
         </div>
     </div>
-    <?php endif; ?>
+    <?php endif; ?> -->
 
     <?php if(config('settings.project_permissions_view_invoices')): ?>
     <!--INVOICES-->
-    <div class="m-t-10 m-b-10">
+    <!-- <div class="m-t-10 m-b-10">
         <hr>
-    </div>
-    <div class="card-body p-t-0 p-b-0">
+    </div> -->
+    <div class="card-body p-t-0 p-b-0" style="display:none">
         <div>
             <table class="table no-border m-b-0">
                 <tbody>
@@ -277,9 +277,9 @@
 
     <?php if(config('visibility.project_show_custom_fields')): ?>
     <!--CUSTOMER FIELDS-->
-    <div class="m-t-10 m-b-10">
+    <!-- <div class="m-t-10 m-b-10">
         <hr>
-    </div>
+    </div> -->
     <div class="card-body p-t-0 p-b-0">
         <?php $__currentLoopData = $fields; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $field): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <?php if($field->customfields_show_project_page == 'yes'): ?>
