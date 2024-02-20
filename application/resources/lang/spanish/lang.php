@@ -61,7 +61,7 @@ return [
 'add_note' => "Crear una nota nueva",
 'add_payment' => "Agregar pago",
 'add_product' => "Crear un nuevo producto",
-'add_project' => "Crear un nuevo proyecto",
+'add_project' => "Crear un nueva solicitud",
 'add_role' => "Crear un nuevo rol",
 'add_selected_items' => "Agregar elementos seleccionados",
 'add_tag' => "Añadir etiqueta",
