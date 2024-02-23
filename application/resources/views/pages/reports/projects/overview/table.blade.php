@@ -37,7 +37,7 @@
                 <th class="col_project_description"><a href="javascript:void(0)">OBSERVACION<span
                             class="sorting-icons"><i class="ti-arrows-vertical"></i></span></a></th>
 
-                <th class="col_project_proveedor"><a href="javascript:void(0)">COMPRADOR<span
+                <th class="col_project_proveedor"><a href="javascript:void(0)">COMPAÑÍA<span
                             class="sorting-icons"><i class="ti-arrows-vertical"></i></span></a></th>
 
             </tr>

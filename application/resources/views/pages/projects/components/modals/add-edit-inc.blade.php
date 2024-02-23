@@ -21,17 +21,14 @@
                         class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.client')) }}*</label>
                     <div class="col-sm-12 col-lg-9">
                         <!--select2 basic search-->
-                        <select name="project_clientid" id="project_clientid"
-                            class="form-control form-control-sm js-select2-basic-search-modal select2-hidden-accessible"
-                            data-ajax--url="{{ url('/') }}/feed/company_names"></select>
+                        <select name="project_clientid" id="project_clientid" class="form-control form-control-sm js-select2-basic-search-modal select2-hidden-accessible" data-ajax--url="{{ url('/') }}/feed/company_names"></select>
                         <!--select2 basic search-->
                         </select>
                     </div>
                 </div>
             </div>
-
             <!--new client-->
-            <div class="client-selector-container hidden" id="client-new-container">
+            <div class="client-selector-container hidden" id="client-new-container">            
                 <div class="form-group row">
                     <label
                         class="col-sm-12 col-lg-4 text-left control-label col-form-label required">{{ cleanLang(__('lang.company_name')) }}*</label>
@@ -40,7 +37,6 @@
                             name="client_company_name">
                     </div>
                 </div>
-
                 <div class="form-group row">
                     <label
                         class="col-sm-12 col-lg-4 text-left control-label col-form-label required">{{ cleanLang(__('lang.first_name')) }}*</label>
@@ -65,19 +61,18 @@
                     </div>
                 </div>
             </div>
-
             <!--option buttons-->
             <div class="client-selector-links">
                 <a href="javascript:void(0)" class="client-type-selector" data-type="new"
-                    data-target-container="client-new-container">@lang('lang.new_client')</a> |
+                    data-target-container="client-new-container">@lang('lang.new_client')
+                </a> |
                 <a href="javascript:void(0)" class="client-type-selector active" data-type="existing"
-                    data-target-container="client-existing-container">@lang('lang.existing_client')</a>
+                    data-target-container="client-existing-container">@lang('lang.existing_client')
+                </a>
             </div>
-
             <!--client type indicator-->
             <input type="hidden" name="client-selection-type" id="client-selection-type" value="existing">
         </div>
-
         @endif
         <!--/#client-->
 
